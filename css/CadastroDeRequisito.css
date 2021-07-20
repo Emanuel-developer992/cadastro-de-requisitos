@@ -1,0 +1,55 @@
+.title {
+    color: #1d394f;
+}
+
+.subtitle {
+    color: #30b1ea;
+}
+
+.panel-div1 {
+    border-color: #222d6b !important;
+    padding: 0px !important;
+}
+
+.panel-div2 {
+    background-color: #222d6b !important;
+    border-color: #222d6b !important;
+}
+
+.p-cinza {
+    color: gray;
+}
+
+.dta {
+    text-align: center;
+    font-size: 17px !important;
+}
+
+.nav-close {
+    display: none !important;
+}
+
+.addon {
+    color: white !important;
+    background-color:#222d6b !important;
+    border-color: #222d6b !important;
+}
+
+.invisible-input {
+    border-color: transparent !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    pointer-events: none !important;
+    box-shadow: none !important;
+}
+
+.invisible-text {
+    border-color: transparent !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.off {
+    pointer-events: none !important;
+}

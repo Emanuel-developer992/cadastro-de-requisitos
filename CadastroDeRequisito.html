@@ -26,7 +26,6 @@
     <script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
 
 <body>
-
     <div class="fluig-style-guide">
         <form name="form" role="form">
 
@@ -87,9 +86,6 @@
                                             },{
                                             'field':'title',
                                             'label':'Título'
-                                            },{
-                                            'field':'resumoEsc',
-                                            'label':'Escopo da Norma'
                                             }
                                         ]
                                     }"
@@ -199,7 +195,7 @@
                             <br>
 
                             <div class="d-grid gap-2 col-6 mx-auto">
-                                <button class="btn btn-info" type="button" onclick="pushTable()">Salvar</button>
+                                <button class="btn btn-info" type="button" onclick="pushTable(); nTable();">Salvar</button>
                             </div>
                             <br>
                             <br>
@@ -213,16 +209,18 @@
                                     <th>Título do Requisito</th>
                                     <th>Descrição do Requisito</th>
                                     <th>Orientação para Atendimento</th>
+                                    <th>Ação</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td><input id="tb_norma" name="tb_norma" style="width: 100px;" class="invisible-input" readonly></td>
-                                    <td><input id="tb_req" name="tb_req" style="width: 100px;" class="invisible-input" readonly></td>
+                                    <td><input id="tb_norma" name="tb_norma" style="width: 90px;" class="invisible-input" readonly></td>
+                                    <td><input id="tb_req" name="tb_req" style="width: 80px;" class="invisible-input" readonly></td>
                                     <td><input id="tb_aplic" name="tb_aplic" style="width: 100px;" class="invisible-input" readonly></td>
-                                    <td><textarea id="tb_title" name="tb_title" class="invisible-text" readonly></textarea></td>
+                                    <td><textarea id="tb_title" name="tb_title" style="width: 80px;" class="invisible-text" readonly></textarea></td>
                                     <td><textarea id="tb_desc" name="tb_desc" class="invisible-text" readonly></textarea></td>
                                     <td><textarea id="tb_ori" name="tb_ori" class="invisible-text" readonly></textarea></td>
+                                    <td><button type="button" id="excluir1" name="excluir1" class="btn btn-danger excluir">Excluir</button></td>
                                 </tr>
                                 </tbody>
                             </table>

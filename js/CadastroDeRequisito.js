@@ -1,7 +1,8 @@
 //EXECUTAR AO CARREGAR A PÁGINA
-window.onload = function() {
-    
-   
+window.onload = function() {  
+    if (getWKNumState() == 1) {
+        count = $('#tb_registro tr').length - 2;
+    }
 };
 
 //DATA DE HOJE
@@ -60,6 +61,7 @@ function autoPreenc() {
 // Listagem de registro
 var count = 0;
 function pushTable() {
+
     count++;
     wdkAddChild('tb_registro');
 
@@ -93,4 +95,15 @@ function pushTable() {
     if (count == 1) {
         $('#div_panel1').addClass('off');
     }
+
+    $(".excluir").bind("click", Excluir);
+
 }
+
+function Excluir(){
+
+    var par = $(this).parent().parent(); //tr
+
+    par.remove();
+
+};
